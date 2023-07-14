@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.NavBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    background-color: black;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+}
+
+.Actions button{
+    margin-right: 10px;
+    width:100px;
+    height: 25px;
+    cursor: pointer;
+}
