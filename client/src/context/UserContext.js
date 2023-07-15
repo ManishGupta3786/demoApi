@@ -11,13 +11,13 @@ export const UserContextProvider = ({children})=>{
     },[])
 
     const saveUser = async (data) =>{
-        const response = await axios.post('http://localhost:5000/demoApi/register',data);
+        const response = await axios.post('http://184.72.152.2/demoApi/register',data);
         localStorage.setItem("user",JSON.stringify(response.data.data));
         setUser(response.data.data);
     }
 
     const getUser = async (data) =>{
-        const response = await axios.post('http://localhost:5000/demoApi/login',data);
+        const response = await axios.post('http://184.72.152.2/demoApi/login',data);
         localStorage.setItem("user",JSON.stringify(response.data));
         setUser(response.data);
     }
