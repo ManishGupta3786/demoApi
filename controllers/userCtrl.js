@@ -29,3 +29,8 @@ exports.register = async (req, res) =>{
         console.log(error.message);
     }
 }
+
+exports. getUsers = async (req, res)=>{
+    let users = await userModel.find();
+    res.status(200).json(users);
+}
