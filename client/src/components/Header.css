@@ -20,3 +20,38 @@
     height: 25px;
     cursor: pointer;
 }
+
+.UserInfo{
+    font-size: 12px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:gray
+}
+
+@media screen and (max-width:576px){
+
+    .NavBar{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .Brand{
+        order: 1;
+        flex: 1;
+    }
+
+    .Actions{
+        display: flex;
+        order: 2;
+        flex: 1;
+        justify-content: right;
+    }
+
+    .UserInfo{
+        order: 3;
+        flex:2;
+        flex-basis: 400px;
+        font-size: 12px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color:gray;
+        margin-top: 10px;
+    }
+}
